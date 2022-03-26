@@ -2,7 +2,7 @@ from subprocess import run
 import sys
 
 if len(sys.argv) == 1:
-    raise Exception("Usage:python django.py YOUR_APP_NAME")
+    raise Exception("Usage:python3 django.py YOUR_APP_NAME")
 
 dir = sys.argv[1]
 run("mkdir {}".format(dir), shell=True)
