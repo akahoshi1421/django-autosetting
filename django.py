@@ -37,7 +37,18 @@ line = [
     "\n",
     "urlpatterns = []\n",
 ]
+file.writelines(line)
+file.close()
 
+file = open(".gitignore", "w")
+line = [
+    "*.log\n",
+    ".pyc\n",
+    "__pycache__/\n",
+    "db-volumes/\n",
+    "db.sqlite3\n",
+    "dump.rdb\n",
+]
 file.writelines(line)
 file.close()
 
