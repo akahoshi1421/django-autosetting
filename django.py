@@ -40,7 +40,7 @@ line = [
 file.writelines(line)
 file.close()
 
-file = open(".gitignore", "w")
+file = open("{}/.gitignore".format(dir), "w")
 line = [
     "*.log\n",
     ".pyc\n",
